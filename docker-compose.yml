@@ -3,6 +3,7 @@ services:
   api:
     image: gemanueldev/audiofunny-go:latest
     container_name: audiofunny_go
+    restart: always
     ports:
       - "${PORT}:${PORT}"
     env_file:
