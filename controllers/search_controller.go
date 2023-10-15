@@ -26,7 +26,7 @@ func SearchHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	button := htmlquery.FindOne(doc, "//*[@id='instants_container']/div[1]/button")
+	button := htmlquery.FindOne(doc, "//*[@id='instants_container']/div[1]/div[1]/button")
 	if button == nil {
 		http.Error(w, "Botão não encontrado", http.StatusNotFound)
 		return
