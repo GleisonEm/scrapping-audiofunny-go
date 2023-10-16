@@ -23,6 +23,8 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/search", controllers.SearchHandler).Methods("GET")
+	r.HandleFunc("/searchAll", controllers.SearchAllHandler).Methods("GET")
+	r.HandleFunc("/searchWithBase64", controllers.SearchReturnBase64).Methods("GET")
 
 	http.Handle("/", r)
 
