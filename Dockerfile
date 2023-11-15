@@ -1,5 +1,5 @@
 # Use a imagem oficial do Golang como base
-FROM golang:latest
+FROM arm64v8/golang:latest
 
 # Defina a variável de ambiente PORT com um valor padrão
 
